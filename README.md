@@ -1,9 +1,23 @@
 # Iguazio Remote Delpoyment Example
 
-### Quick-Start
+## Quick-Start
 1. Copy `.env-default` to `.env` and update respective values. View below for full overview of what each value means.
 2. Install requirements via `requirements.txt`.
-3. Run `deploy.py` for Iris example.
+3. Run `python_to_mlrun/deploy.py` from root directory for an example on turning a singular Python script into an MLRun job.
+4. Run `pipeline/deploy.py` from root directory for an example on a full Kubeflow Pipeline.
+
+
+## Python To MLRun
+Simple example on running a single Python file as an MLRun job.
+
+### File Descriptions
+- `deploy.py`
+    - File that handles actual deployment. Creates MLRun project, imports MLRun function from Python file, runs MLRun job on cluster.
+- `training.py`
+    - Performs training via SKLearn using data from URL. Logs model file (pickle), model parameters, and model metrics as artifacts on Iguazio platform and in MLRun database.
+
+## Pipeline
+Full Kubeflow Pipeline that queries data from Presto and uses it to train model via SKLearn.
 
 ### Notes for Customizing Pipeline
 - Seperate different components into their own files for simplicity
