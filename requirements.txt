@@ -1,0 +1,2 @@
+python-dotenv
+mlrun==0.5.4
