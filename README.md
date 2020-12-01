@@ -1,7 +1,7 @@
 # Iguazio Remote Delpoyment Example
 
 ### Quick-Start
-1. Update `.env` file with respective values. View below for full overview of what each value means.
+1. Copy `.env-default` to `.env` and update respective values. View below for full overview of what each value means.
 2. Install requirements via `requirements.txt`.
 3. Run `deploy.py` for Iris example.
 
