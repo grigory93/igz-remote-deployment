@@ -1,4 +1,4 @@
-# Iguazio Remote Delpoyment Example
+# Iguazio Remote Deployment Example
 
 ## Quick-Start
 1. Copy `.env-default` to `.env` and update respective values. View below for full overview of what each value means.
