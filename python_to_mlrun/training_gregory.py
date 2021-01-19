@@ -13,7 +13,7 @@ def handler(context):
     """
 
     context.logger.info("Logging Dataset")
-    df = pd.read_csv("./demos/titanic.csv")
+    df = pd.read_csv("/User/demos/titanic.csv")
 
 
     context.logger.info("Saving Dataset")
